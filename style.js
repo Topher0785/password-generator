@@ -1,15 +1,22 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
+
 function generatePassword(){
-debugger
-var passwordlength= prompt("Enter Password Character greater than 7 and less than 129");
+
+
+
+var passwordlength = window.prompt("Enter Password Between 8 and 128");{
+
+if (passwordlength < 8 || passwordlength >128){
+    window.alert("Password must be between 8 and 128 characters")
+}    
 var number= confirm ("Do you want numbers in your password?");
 var special= confirm ("Do you want special characters?");
 var bigletter= confirm ("Do you want to add upper case characters?");
 var littleletter= confirm ("Do you want to add lower case characters?");
 
+}
 
-debugger
 
 // Create Array
 var numbchoice = ["0","1","2","3","4","5","6","7","8","9"];
@@ -43,7 +50,7 @@ userInputArray.push (resultsArray[Math.floor(Math.random() * resultsArray.length
 return userInputArray.join("") ;
 }
 
-debugger
+
 
 // Write  #password input
 function writePassword() {

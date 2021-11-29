@@ -5,7 +5,7 @@ function generatePassword() {
   debugger;
   var passwordlength = window.prompt("Enter Password Between 8 and 128");
 
-  if (passwordlength > 8 && passwordlength < 128) {
+  if (passwordlength > 7 && passwordlength < 129) {
     var number = confirm("Do you want numbers in your password?");
     var special = confirm("Do you want special characters?");
     var bigletter = confirm("Do you want to add upper case characters?");
